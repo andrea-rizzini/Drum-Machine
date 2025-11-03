@@ -7,13 +7,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
-}
+  apiKey: "AIzaSyBPnbzfTOigLTL60pDcQkM1eNbZtemv7IA",
+  authDomain: "drum-machine-2-99c5b.firebaseapp.com",
+  projectId: "drum-machine-2-99c5b",
+  storageBucket: "drum-machine-2-99c5b.firebasestorage.app",
+  messagingSenderId: "559427055249",
+  appId: "1:559427055249:web:63e3261a78be9be50c9930"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -21,8 +21,8 @@ const db = getFirestore(app);
 
 // insert
 // const added_element = await addDoc(collection(db, "patterns"), {
-//     name: "C",
-//     pattern: [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+//     name: "B",
+//     pattern: [false, false, false, false],
 //   });
 // console.log("Created with ID:", added_element.id);
 
@@ -30,14 +30,14 @@ const db = getFirestore(app);
 // await deleteDoc(doc(db, "patterns", "HDTLXutK1VxQ8PdUYL78"));
 
 // read all
-const elements = await getDocs(collection(db, "patterns"));
-elements.forEach(function(doc) {
-    console.log(doc.id)
-    console.log(doc.data())
-});
+// const elements = await getDocs(collection(db, "patterns"));
+// elements.forEach(function(doc) {
+//     console.log(doc.id)
+//     console.log(doc.data())
+// });
 
 // read with filter
-// const q = query(collection(db, "pattern"), where("patterns", "==", "A"));
+// const q = query(collection(db, "patterns"), where("name", "==", "A"));
 // const result = await getDocs(q);
 // result.forEach(function(doc) {
 //   console.log(doc.id)
@@ -45,9 +45,16 @@ elements.forEach(function(doc) {
 // });
 
 // update
-// await updateDoc(doc(db, "patterns", "cCLMy7YqfS1FV23V4SvR"), {
-//   values: [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
-// });
+await updateDoc(doc(db, "patterns", "wHAsqbLTEPTVA2GAypv2"), {
+  values: [true, false, true, false],
+});
+
+const q = query(collection(db, "patterns"), where("name", "==", "A"));
+const result = await getDocs(q);
+result.forEach(function(doc) {
+  console.log(doc.id)
+  console.log(doc.data())
+});
 
 await terminate(db);
 await deleteApp(app);
