@@ -1,0 +1,179 @@
+.key {
+  margin-left: 15px;
+  margin-top: 10px;
+  background-color: grey;
+  width: 50px;
+  height: 90px;
+  border-radius: 10px;
+  border: 4px solid white;
+  cursor: pointer;  
+}
+
+.red {
+  background-color: #d86565;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.yellow {
+  background-color: #fdd238a3;
+}
+
+.white {
+  background-color: #eeeeee;
+}
+
+.led {
+  background-color: black;
+  border: 1px solid black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.div_size{
+  height: 120px;
+  width: 1200px;
+}
+
+.led_play_button{
+  background-color: black;
+  border: 1px solid black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 20px;
+  transform: translate(-50%);
+}
+
+.led_pattern_button{
+  background-color: black;
+  border: 1px solid black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.led-on {
+  background: red;
+}
+
+.active-key {
+  border: 4px solid green;
+}
+
+.speaker-on {
+  background-color: yellow;
+}
+
+#key_div { 
+  background-color: lightgrey;
+  margin-top: 10px;
+  display: inline-flex;
+}
+
+#tempo {
+  display: inline-flex;
+  background-color: lightgrey;
+  height: 120px;
+}
+
+#root {
+  margin-top: 10px;
+}
+
+.monitor_bpm{
+  display: flex;
+  background-color: black;
+  width: 160px;
+  height: 80px;
+  border-radius: 10px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.div_bpm_text{
+  display: inline-flex;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.play_button{
+  display: flex;
+  background-color: #C2BE1F;
+  width: 160px;
+  height: 80px;
+  border-radius: 10px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+#bpm_text_button{
+  height: 20px;
+  margin-top: 3px;
+}
+
+#bpm-text{
+  height: 20px;
+  width: 80px;
+}
+
+.pattern{
+  margin-top: 20px;
+  margin-left: 40px;
+  display: flex;
+  background-color: #C2BE1F;
+  cursor: pointer;
+  width: 160px;
+  height: 80px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.save_pattern_button{
+  height: 80px;
+  width: 100;
+  background-color: #C2BE1F;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.btn {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #333;
+  background: #444;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  left: 30px;
+  top: 35px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+#speaker{
+  margin-top: 10px;
+}
